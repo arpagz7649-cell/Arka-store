@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Store - Top Up Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Top Up Mobile Legends</h1>
+
+        <div class="section">
+            <h3>1. Masukkan User ID</h3>
+            <div class="input-group">
+                <input type="number" id="user_id" placeholder="User ID" required>
+                <input type="number" id="zone_id" placeholder="(Zone ID)" required>
+            </div>
+            <p class="hint">Contoh: 12345678 (1234)</p>
+        </div>
+
+        <div class="section">
+            <h3>2. Pilih Nominal Diamond</h3>
+            <div class="grid-nominal">
+                <button class="item-diamond" onclick="selectDiamond(86, 20000)">86 Diamonds <br> <span>Rp 20.000</span></button>
+                <button class="item-diamond" onclick="selectDiamond(172, 40000)">172 Diamonds <br> <span>Rp 40.000</span></button>
+                <button class="item-diamond" onclick="selectDiamond(257, 60000)">257 Diamonds <br> <span>Rp 60.000</span></button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>3. Pilih Pembayaran</h3>
+            <select id="payment_method">
+                <option value="qris">QRIS (Otomatis)</option>
+                <option value="dana">DANA</option>
+                <option value="gopay">GoPay</option>
+            </select>
+        </div>
+
+        <button class="btn-order" onclick="processOrder()">Beli Sekarang</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+  
